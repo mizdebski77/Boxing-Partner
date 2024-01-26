@@ -1,1 +1,5 @@
-export const Wrapper = styled
+import styled from "styled-components/native";
+
+export const Wrapper = styled.View`
+
+`;
