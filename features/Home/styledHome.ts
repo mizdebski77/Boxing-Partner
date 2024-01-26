@@ -27,7 +27,9 @@ export const Title = styled.Text`
     margin-bottom: 20px;
 `;
 
-export const Tile = styled.View`
+export const Tile = styled.Button`
+    border-radius: 20px;
+    border: 2px solid ${({ theme }) => theme.color.fontSecond};
     background: red;
 `;
 
@@ -36,6 +38,5 @@ export const TileTitle = styled.Text`
 `;
 
 export const TileBackground = styled.ImageBackground`
-    width: 100%;
-    height: 100%;
+
 `;

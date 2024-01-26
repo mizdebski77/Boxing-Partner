@@ -10,11 +10,8 @@ export const Home = () => {
                         Chose your training
                     </Title>
 
-                    <Tile>
-                        <TileBackground source={require('../../common/Images/tileBackground.jpg')}>
-                            <TileTitle>Clasic CountDown</TileTitle>
+                    <Tile title="Classic Countdown">
 
-                        </TileBackground>
                     </Tile>
                 </ContentWrapper>
 
