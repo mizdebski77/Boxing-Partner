@@ -1,3 +1,3 @@
 export type RootStackParamList = {
-    Home: string;
+    Home: undefined;
 };
