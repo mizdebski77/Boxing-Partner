@@ -1,9 +1,14 @@
 import React from 'react';
 import { Wrapper, BackGroundImage, TitleSpan, Title, Caption, Button, ButtonText } from './styledWelcomePage';
 import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../core/types';
+
 
 export const WelcomePage = () => {
-    const navigation = useNavigation();
+    const { navigate } = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
+
     return (
         <Wrapper>
             <BackGroundImage source={require('../../common/Images/logoBackground.jpg')} >
@@ -14,9 +19,9 @@ export const WelcomePage = () => {
                     Boxing trainer on your phone
                 </Caption>
 
-                {/* <Button onPress={() => navigation.navigate('Home')}>
+                <Button onPress={() => navigate('Home')}>
                     <ButtonText>Start your training</ButtonText>
-                </Button> */}
+                </Button>
             </BackGroundImage>
         </Wrapper>
 
