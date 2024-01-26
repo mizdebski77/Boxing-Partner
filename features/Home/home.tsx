@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, BackGroundImage, TitleSpan, Title, Caption, ContentWrapper } from './styledHome';
+import { Wrapper, BackGroundImage, Title, ContentWrapper, Tile, TileTitle, TileBackground } from './styledHome';
 
 export const Home = () => {
     return (
@@ -9,6 +9,13 @@ export const Home = () => {
                     <Title>
                         Chose your training
                     </Title>
+
+                    <Tile>
+                        <TileBackground source={require('../../common/Images/tileBackground.jpg')}>
+                            <TileTitle>Clasic CountDown</TileTitle>
+
+                        </TileBackground>
+                    </Tile>
                 </ContentWrapper>
 
             </BackGroundImage>

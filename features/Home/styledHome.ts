@@ -24,15 +24,18 @@ export const Title = styled.Text`
     font-size: 32px;
     text-align: center;
     font-weight: bold;
-`;
-
-export const TitleSpan = styled.Text`
-    color: ${({ theme }) => theme.color.fontSecond};
-
-`;
-
-export const Caption = styled.Text`
-    font-size: 28px;
-    color: ${({ theme }) => theme.color.fontSecond};
     margin-bottom: 20px;
+`;
+
+export const Tile = styled.View`
+    background: red;
+`;
+
+export const TileTitle = styled.Text`
+
+`;
+
+export const TileBackground = styled.ImageBackground`
+    width: 100%;
+    height: 100%;
 `;
