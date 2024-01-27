@@ -27,10 +27,11 @@ export const Title = styled.Text`
     margin-bottom: 20px;
 `;
 
-export const Tile = styled.Button`
+export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
     border: 2px solid ${({ theme }) => theme.color.fontSecond};
     background: red;
+    padding: 20px;
 `;
 
 export const TileTitle = styled.Text`
