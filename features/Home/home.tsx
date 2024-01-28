@@ -11,9 +11,7 @@ export const Home = () => {
                     </Title>
 
                     <Tile >
-                        <BackGroundImage source={require('../../common/Images/background.jpg')}/>
-
-                    </Tile>
+                        <BackGroundImage source={require('../../common/Images/background.jpg')}/>                    </Tile>
                 </ContentWrapper>
 
             </BackGroundImage>
