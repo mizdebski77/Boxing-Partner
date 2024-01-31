@@ -1,5 +1,6 @@
 import React from 'react';
 import { Wrapper, BackGroundImage, Title, ContentWrapper, Tile, TileTitle, TileBackground, } from './styledHome';
+import { tiles } from './tilesTitle';
 
 export const Home = () => {
     return (
@@ -9,14 +10,14 @@ export const Home = () => {
                     <Title>
                         Chose your training
                     </Title>
+                        {tiles.map((tile, index) => (
+                            <Tile key={index}>
+                                <TileBackground source={require('../../common/Images/tileBackground.jpg')} >
+                                    <TileTitle>{tile.text}</TileTitle>
+                                </TileBackground>
+                            </Tile>
+                        ))}
 
-                    <Tile>
-                        <TileBackground source={require('../../common/Images/tileBackground.jpg')} >
-                            <TileTitle>Classic Countdown</TileTitle>
-
-                        </TileBackground>
-
-                    </Tile>
                 </ContentWrapper>
             </BackGroundImage>
         </Wrapper>

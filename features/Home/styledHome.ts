@@ -17,6 +17,8 @@ export const BackGroundImage = styled.ImageBackground`
 
 export const ContentWrapper = styled.View`
     padding: 80px 0;
+    flex: 1;
+    gap: 40px;
 `;
 
 export const Title = styled.Text`
@@ -29,13 +31,13 @@ export const Title = styled.Text`
 
 export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
-    border: 2px solid ${({ theme }) => theme.color.fontSecond};
+    border: 2px solid ${({ theme }) => theme.color.secondColor};
     overflow: hidden;
 `;
 
 export const TileTitle = styled.Text`
-    color: ${({ theme }) => theme.color.fontSecond};
-    font-size: 36px;
+    color: ${({ theme }) => theme.color.fourthColor};
+    font-size: 32px;
     text-align: center;
     text-transform: capitalize;
     font-weight: normal;
