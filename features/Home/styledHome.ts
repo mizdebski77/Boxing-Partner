@@ -29,7 +29,7 @@ export const Title = styled.Text`
 
 export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
-    border: 2px solid ${({ theme }) => theme.color.fontMain};
+    border: 2px solid ${({ theme }) => theme.color.fontSecond};
     overflow: hidden;
 `;
 
@@ -37,10 +37,10 @@ export const TileTitle = styled.Text`
     color: ${({ theme }) => theme.color.fontSecond};
     font-size: 36px;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: normal;
 `;
 
 export const TileBackground = styled.ImageBackground`
-    padding: 20px;
+    padding: 40px 20px;
 `;
