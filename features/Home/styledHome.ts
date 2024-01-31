@@ -31,18 +31,19 @@ export const Title = styled.Text`
 
 export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
-    border: 2px solid ${({ theme }) => theme.color.secondColor};
+    border: 2px solid ${({ theme }) => theme.color.fontSecond};
     overflow: hidden;
 `;
 
 export const TileTitle = styled.Text`
-    color: ${({ theme }) => theme.color.fourthColor};
+    color: ${({ theme }) => theme.color.fontSecond};
     font-size: 32px;
     text-align: center;
     text-transform: capitalize;
     font-weight: normal;
+    background: rgba(164, 30, 32, 0.7);
 `;
 
 export const TileBackground = styled.ImageBackground`
-    padding: 40px 20px;
+    padding: 44px 0px;
 `;
