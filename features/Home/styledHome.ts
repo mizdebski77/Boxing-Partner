@@ -47,3 +47,15 @@ export const TileTitle = styled.Text`
 export const TileBackground = styled.ImageBackground`
     padding: 44px 0px;
 `;
+
+export const BackButton = styled.TouchableOpacity`
+    background: ${({ theme }) => theme.color.fontMain};
+    padding: 12px 80px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+`;
+
+export const BackbuttonText = styled.Text`
+    color: ${({ theme }) => theme.color.fontSecond};
+    font-size: 20px;
+`;

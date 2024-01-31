@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, BackGroundImage, Title, ContentWrapper, Tile, TileTitle, TileBackground, } from './styledHome';
+import { Wrapper, BackGroundImage, Title, ContentWrapper, Tile, TileTitle, TileBackground, BackButton, BackbuttonText, } from './styledHome';
 import { tiles } from './tilesTitle';
 export const Home = () => {
     return (
@@ -16,8 +16,11 @@ export const Home = () => {
                             </TileBackground>
                         </Tile>
                     ))}
-
                 </ContentWrapper>
+
+                <BackButton>
+                    <BackbuttonText>Back</BackbuttonText>
+                </BackButton>
             </BackGroundImage>
         </Wrapper >
     );
