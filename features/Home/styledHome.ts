@@ -21,23 +21,23 @@ export const ContentWrapper = styled.View`
 
 export const Title = styled.Text`
     color: ${({ theme }) => theme.color.fontSecond};
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 20px;
 `;
 
+
 export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
-    border: 2px solid ${({ theme }) => theme.color.fontSecond};
-    background: red;
-    padding: 20px;
+    border: 1px solid ${({ theme }) => theme.color.fontSecond};
+    overflow: hidden;
 `;
 
 export const TileTitle = styled.Text`
-
+    color: ${({ theme }) => theme.color.fontMain};
 `;
 
 export const TileBackground = styled.ImageBackground`
-
+    padding: 20px;
 `;
