@@ -12,7 +12,7 @@ export const Home = () => {
 
                     <Tile>
                         <TileBackground source={require('../../common/Images/tileBackground.jpg')} >
-                            <TileTitle>We love you</TileTitle>
+                            <TileTitle>Classic Countdown</TileTitle>
 
                         </TileBackground>
 

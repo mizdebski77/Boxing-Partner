@@ -20,22 +20,25 @@ export const ContentWrapper = styled.View`
 `;
 
 export const Title = styled.Text`
-    color: ${({ theme }) => theme.color.fontSecond};
+    color: ${({ theme }) => theme.color.fontMain};
     font-size: 40px;
     text-align: center;
     font-weight: normal;
     margin-bottom: 20px;
 `;
 
-
 export const Tile = styled.TouchableOpacity`
     border-radius: 20px;
-    border: 1px solid ${({ theme }) => theme.color.fontSecond};
+    border: 2px solid ${({ theme }) => theme.color.fontMain};
     overflow: hidden;
 `;
 
 export const TileTitle = styled.Text`
-    color: ${({ theme }) => theme.color.fontMain};
+    color: ${({ theme }) => theme.color.fontSecond};
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 `;
 
 export const TileBackground = styled.ImageBackground`
