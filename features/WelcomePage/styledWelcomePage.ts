@@ -38,12 +38,12 @@ export const Button = styled.TouchableOpacity`
     border-radius: 20px;
     padding: 12px 10px;
     background: ${({ theme }) => theme.color.fontMain};
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 `;
 
 export const ButtonText = styled.Text`
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
 `;
 
