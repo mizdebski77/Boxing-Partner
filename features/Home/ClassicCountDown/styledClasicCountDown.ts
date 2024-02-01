@@ -18,6 +18,8 @@ export const ContentWrapper = styled.View`
     padding: 80px 0;
     flex: 1;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -26,15 +28,17 @@ export const Title = styled.Text`
 `;
 
 export const InputWrapper = styled.View`
+    padding: 0 40px;
+    width: 100%;
     flex: 1;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 `;
 
 export const Button = styled.TouchableOpacity`
-    border-radius: 800px;
-    padding: 12px;
     background: ${({ theme }) => theme.color.fontMain};
-    width: 64px;
+    border-radius: 300px;
+    max-width: 64px;
     max-height: 64px;
     flex: 1;
     justify-content: center;
@@ -46,8 +50,6 @@ export const ButtonText = styled.Text`
     font-size: 20px;
     color: white;
 `;
-
-
 
 export const NumberOfRounds = styled.Text`
     color: ${({ theme }) => theme.color.fontSecond};
