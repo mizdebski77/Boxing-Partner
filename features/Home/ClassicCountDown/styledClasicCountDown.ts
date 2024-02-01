@@ -1,8 +1,9 @@
 import styled from "styled-components/native";
 
 export const Wrapper = styled.View`
-    background: red;
-    min-height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const BackGroundImage = styled.ImageBackground`

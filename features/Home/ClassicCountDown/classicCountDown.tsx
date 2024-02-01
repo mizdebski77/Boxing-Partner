@@ -9,7 +9,6 @@ export const ClassicCountDown = () => {
                     <Title>Siema</Title>
                 </ContentWrapper>
             </BackGroundImage>
-
         </Wrapper>
     );
 };

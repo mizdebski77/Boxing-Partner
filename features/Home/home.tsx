@@ -17,7 +17,7 @@ export const Home = () => {
                         Chose your training
                     </Title>
                     {tiles.map((tile, index) => (
-                        <Tile key={index} onPress={() => navigate('Classic')} >
+                        <Tile key={index} onPress={() => navigate(tile.link as keyof RootStackParamList)}>
                             <TileBackground source={tile.img} >
                                 <TileTitle>{tile.text}</TileTitle>
                             </TileBackground>
