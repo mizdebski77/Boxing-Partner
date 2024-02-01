@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText } from './styledClasicCountDown';
+import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText, InputContent, InputTitle } from './styledClasicCountDown';
 
 export const ClassicCountDown = () => {
     return (
@@ -9,14 +9,38 @@ export const ClassicCountDown = () => {
                     <Title>Boxing Timer</Title>
 
                     <InputWrapper>
-                        <Button>
-                            <ButtonText>-</ButtonText>
-                        </Button>
-                        <NumberOfRounds>1</NumberOfRounds>
-                        <Button>
-                            <ButtonText>+</ButtonText>
-                        </Button>
+                        <InputTitle>Number of rounds</InputTitle>
+                        <InputContent>
+                            <Button>
+                                <ButtonText>-</ButtonText>
+                            </Button>
+                            <NumberOfRounds>1</NumberOfRounds>
+                            <Button>
+                                <ButtonText>+</ButtonText>
+                            </Button>
+                        </InputContent>
 
+                        <InputTitle>Number of rounds</InputTitle>
+                        <InputContent>
+                            <Button>
+                                <ButtonText>-</ButtonText>
+                            </Button>
+                            <NumberOfRounds>1</NumberOfRounds>
+                            <Button>
+                                <ButtonText>+</ButtonText>
+                            </Button>
+                        </InputContent>
+
+                        <InputTitle>Number of rounds</InputTitle>
+                        <InputContent>
+                            <Button>
+                                <ButtonText>-</ButtonText>
+                            </Button>
+                            <NumberOfRounds>1</NumberOfRounds>
+                            <Button>
+                                <ButtonText>+</ButtonText>
+                            </Button>
+                        </InputContent>
                     </InputWrapper>
                 </ContentWrapper>
             </BackGroundImage>

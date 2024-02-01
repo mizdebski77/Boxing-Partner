@@ -28,6 +28,18 @@ export const Title = styled.Text`
 `;
 
 export const InputWrapper = styled.View`
+    flex: 1;
+    align-items: start;
+`;
+
+export const InputTitle = styled.Text`
+    color: ${({ theme }) => theme.color.fontSecond};
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+`;
+
+export const InputContent = styled.View`
     padding: 0 40px;
     width: 100%;
     flex: 1;
