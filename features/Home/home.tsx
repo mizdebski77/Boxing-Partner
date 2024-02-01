@@ -17,7 +17,7 @@ export const Home = () => {
                         Chose your training
                     </Title>
                     {tiles.map((tile, index) => (
-                        <Tile key={index}>
+                        <Tile key={index} onPress={() => navigate('Classic')} >
                             <TileBackground source={tile.img} >
                                 <TileTitle>{tile.text}</TileTitle>
                             </TileBackground>
