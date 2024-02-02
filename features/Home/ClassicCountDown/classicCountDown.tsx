@@ -22,7 +22,7 @@ export const ClassicCountDown = () => {
                     <InputWrapper>
                         <InputTitle>Number of rounds</InputTitle>
                         <InputContent>
-                            <Button onPress={removeRound} disabled = {rounds === 1}>
+                            <Button onPress={removeRound} disabled={rounds === 1}>
                                 <ButtonText>-</ButtonText>
                             </Button>
                             <NumberOfRounds>{rounds}</NumberOfRounds>
