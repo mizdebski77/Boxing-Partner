@@ -4,6 +4,8 @@ import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, W
 export const ClassicCountDown = () => {
 
     const [rounds, setRounds] = useState(1);
+    const [roundLenght, seRoundtLenght] = useState('00:00');
+    const [breakLenght, seBreaktLenght] = useState('00:00');
 
     const addRound = () => {
         setRounds(rounds + 1)
@@ -12,6 +14,21 @@ export const ClassicCountDown = () => {
     const removeRound = () => {
         setRounds(rounds - 1)
     };
+
+    const addSeconds = () => {
+        const currentSeconds = parseInt(roundLenght.split(':')[1], 10);
+        const newSeconds = currentSeconds + 5;
+        const newLenght = `00:${newSeconds < 10 ? '0' : ''}${newSeconds}`;
+        seRoundtLenght(newLenght);
+    };
+
+    const removeSeconds = () => {
+        const currentSeconds = parseInt(roundLenght.split(':')[1], 10);
+        const newSeconds = Math.max(currentSeconds - 5, 0);
+        const newLenght = `00:${newSeconds < 10 ? '0' : ''}${newSeconds}`;
+        seRoundtLenght(newLenght);
+    };
+
 
     return (
         <Wrapper>
@@ -32,27 +49,29 @@ export const ClassicCountDown = () => {
                             </Button>
                         </InputContent>
 
-                        <InputTitle>Number of rounds</InputTitle>
+                        <InputTitle>Round Time</InputTitle>
                         <InputContent>
-                            <Button>
-                                <ButtonText>-</ButtonText>
+                            <Button onPress={removeSeconds}>
+                                <ButtonText >-</ButtonText>
                             </Button>
-                            <NumberOfRounds>1</NumberOfRounds>
-                            <Button>
-                                <ButtonText>+</ButtonText>
+                            <NumberOfRounds>{roundLenght}</NumberOfRounds>
+                            <Button onPress={addSeconds}>
+                                <ButtonText >+</ButtonText>
                             </Button>
                         </InputContent>
 
-                        <InputTitle>Number of rounds</InputTitle>
+                        <InputTitle>Round Time</InputTitle>
                         <InputContent>
-                            <Button>
-                                <ButtonText>-</ButtonText>
+                            <Button onPress={removeSeconds}>
+                                <ButtonText >-</ButtonText>
                             </Button>
-                            <NumberOfRounds>1</NumberOfRounds>
-                            <Button>
-                                <ButtonText>+</ButtonText>
+                            <NumberOfRounds>{roundLenght}</NumberOfRounds>
+                            <Button onPress={addSeconds}>
+                                <ButtonText >+</ButtonText>
                             </Button>
                         </InputContent>
+
+
                     </InputWrapper>
                 </ContentWrapper>
             </BackGroundImage>
