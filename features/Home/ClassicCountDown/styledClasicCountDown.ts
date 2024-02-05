@@ -67,3 +67,14 @@ export const NumberOfRounds = styled.Text`
     color: ${({ theme }) => theme.color.fontSecond};
     font-size: 40px;
 `;
+
+export const StartButton = styled.TouchableOpacity`
+    background: ${({ theme }) => theme.color.fontMain};
+    padding: 12px 80px;
+    border-radius: 20px;
+`;
+
+export const StartButtonText = styled.Text`
+    color: ${({ theme }) => theme.color.fontSecond};
+    font-size: 20px;
+`;

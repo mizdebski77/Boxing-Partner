@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText, InputContent, InputTitle } from './styledClasicCountDown';
+import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText, InputContent, InputTitle, StartButton, StartButtonText } from './styledClasicCountDown';
 
 export const ClassicCountDown = () => {
 
@@ -70,9 +70,11 @@ export const ClassicCountDown = () => {
                                 <ButtonText >+</ButtonText>
                             </Button>
                         </InputContent>
-
-
                     </InputWrapper>
+
+                    <StartButton>
+                        <StartButtonText> Start Training</StartButtonText>
+                    </StartButton>
                 </ContentWrapper>
             </BackGroundImage>
         </Wrapper>
