@@ -15,7 +15,7 @@ export const BackGroundImage = styled.ImageBackground`
 `;
 
 export const ContentWrapper = styled.View`
-    padding: 80px 0;
+    padding: 40px 0;
     flex: 1;
     gap: 40px;
     justify-content: center;
@@ -30,13 +30,18 @@ export const Title = styled.Text`
 export const InputWrapper = styled.View`
     flex: 1;
     align-items: start;
+    gap: 20px;
+`;
+
+export const InputContainer = styled.View`
+    flex: 1;
 `;
 
 export const InputTitle = styled.Text`
     color: ${({ theme }) => theme.color.fontSecond};
     text-align: center;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin: 0;
 `;
 
 export const InputContent = styled.View`
@@ -45,6 +50,7 @@ export const InputContent = styled.View`
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -52,6 +58,7 @@ export const Button = styled.TouchableOpacity`
     border-radius: 300px;
     max-width: 64px;
     max-height: 64px;
+    height: 100%;
     flex: 1;
     justify-content: center;
     align-items: center;

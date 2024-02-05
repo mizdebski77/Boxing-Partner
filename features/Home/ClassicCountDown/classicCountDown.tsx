@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText, InputContent, InputTitle, StartButton, StartButtonText } from './styledClasicCountDown';
+import { BackGroundImage, ContentWrapper, InputWrapper, NumberOfRounds, Title, Wrapper, Button, ButtonText, InputContent, InputTitle, StartButton, StartButtonText, InputContainer } from './styledClasicCountDown';
 
 export const ClassicCountDown = () => {
 
@@ -37,39 +37,49 @@ export const ClassicCountDown = () => {
                     <Title>Boxing Timer</Title>
 
                     <InputWrapper>
-                        <InputTitle>Number of rounds</InputTitle>
-                        <InputContent>
-                            <Button onPress={removeRound} disabled={rounds === 1}>
-                                <ButtonText>-</ButtonText>
-                            </Button>
-                            <NumberOfRounds>{rounds}</NumberOfRounds>
+                        <InputContainer>
+                            <InputTitle>Number of rounds</InputTitle>
+                            <InputContent>
+                                <Button onPress={removeRound} disabled={rounds === 1}>
+                                    <ButtonText>-</ButtonText>
+                                </Button>
+                                <NumberOfRounds>{rounds}</NumberOfRounds>
 
-                            <Button onPress={addRound}>
-                                <ButtonText >+</ButtonText>
-                            </Button>
-                        </InputContent>
+                                <Button onPress={addRound}>
+                                    <ButtonText >+</ButtonText>
+                                </Button>
+                            </InputContent>
+                        </InputContainer>
 
-                        <InputTitle>Round Time</InputTitle>
-                        <InputContent>
-                            <Button onPress={removeSeconds}>
-                                <ButtonText >-</ButtonText>
-                            </Button>
-                            <NumberOfRounds>{roundLenght}</NumberOfRounds>
-                            <Button onPress={addSeconds}>
-                                <ButtonText >+</ButtonText>
-                            </Button>
-                        </InputContent>
 
-                        <InputTitle>Round Time</InputTitle>
-                        <InputContent>
-                            <Button onPress={removeSeconds}>
-                                <ButtonText >-</ButtonText>
-                            </Button>
-                            <NumberOfRounds>{roundLenght}</NumberOfRounds>
-                            <Button onPress={addSeconds}>
-                                <ButtonText >+</ButtonText>
-                            </Button>
-                        </InputContent>
+                        <InputContainer>
+
+                            <InputTitle>Round Time</InputTitle>
+                            <InputContent>
+                                <Button onPress={removeSeconds}>
+                                    <ButtonText >-</ButtonText>
+                                </Button>
+                                <NumberOfRounds>{roundLenght}</NumberOfRounds>
+                                <Button onPress={addSeconds}>
+                                    <ButtonText >+</ButtonText>
+                                </Button>
+                            </InputContent>
+                        </InputContainer>
+
+
+                        <InputContainer>
+                            <InputTitle>Round Time</InputTitle>
+                            <InputContent>
+                                <Button onPress={removeSeconds}>
+                                    <ButtonText >-</ButtonText>
+                                </Button>
+                                <NumberOfRounds>{roundLenght}</NumberOfRounds>
+                                <Button onPress={addSeconds}>
+                                    <ButtonText >+</ButtonText>
+                                </Button>
+                            </InputContent>
+                        </InputContainer>
+
                     </InputWrapper>
 
                     <StartButton>
